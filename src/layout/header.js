@@ -58,16 +58,16 @@ const Header = () => {
               </div>
               {/* End of Dropdown Menu */}
               <span className="divider d-lg-show" />
-              <Link to="blog.html" className="d-lg-show">
+              {/* <Link to="blog.html" className="d-lg-show">
                 Blog
-              </Link>
-              <Link to="contact-us.html" className="d-lg-show">
+              </Link> */}
+              <Link to="#" className="d-lg-show">
                 Contact Us
               </Link>
-              <Link to="my-account.html" className="d-lg-show">
+              <Link to="#" className="d-lg-show">
                 My Account
               </Link>
-              <Link
+              {/* <Link
                 to="/assets/ajax/login.html"
                 className="d-lg-show login sign-in"
               >
@@ -80,7 +80,7 @@ const Header = () => {
                 className="ml-0 d-lg-show login register"
               >
                 Register
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -120,20 +120,20 @@ const Header = () => {
               </form>
             </div>
             <div className="header-right ml-4">
-              <a
+              {/* <a
                 className="wishlist label-down link d-xs-show"
                 href="wishlist.html"
               >
                 <i className="w-icon-heart" />
                 <span className="wishlist-label d-lg-show">Wishlist</span>
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 className="compare label-down link d-xs-show"
                 href="compare.html"
               >
                 <i className="w-icon-compare" />
                 <span className="compare-label d-lg-show">Compare</span>
-              </a>
+              </a> */}
               <div className="dropdown cart-dropdown cart-offcanvas mr-0 mr-lg-2">
                 <div className="cart-overlay" />
                 <Link to="#" className="cart-toggle label-down link">
@@ -153,10 +153,7 @@ const Header = () => {
                   <div className="products">
                     <div className="product product-cart">
                       <div className="product-detail">
-                        <Link
-                          to="product-default.html"
-                          className="product-name"
-                        >
+                        <Link to="/shop" className="product-name">
                           Beige knitted elas
                           <br />
                           tic runner shoes
@@ -167,7 +164,7 @@ const Header = () => {
                         </div>
                       </div>
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/shop">
                           <img
                             src="/assets/images/cart/product-1.jpg"
                             alt="product"
@@ -185,10 +182,7 @@ const Header = () => {
                     </div>
                     <div className="product product-cart">
                       <div className="product-detail">
-                        <Link
-                          to="product-default.html"
-                          className="product-name"
-                        >
+                        <Link to="/shop" className="product-name">
                           Blue utility pina
                           <br />
                           fore denim dress
@@ -199,7 +193,7 @@ const Header = () => {
                         </div>
                       </div>
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/shop">
                           <img
                             src="/assets/images/cart/product-2.jpg"
                             alt="product"
@@ -221,14 +215,14 @@ const Header = () => {
                     <span className="price">$58.67</span>
                   </div>
                   <div className="cart-action">
-                    <a
-                      href="cart.html"
+                    <Link
+                      to="#"
                       className="btn btn-dark btn-outline btn-rounded"
                     >
                       View Cart
-                    </a>
+                    </Link>
                     <Link
-                      to="checkout.html"
+                      to="#"
                       className="btn btn-primary  btn-rounded"
                     >
                       Checkout
@@ -266,7 +260,7 @@ const Header = () => {
                     <ul className="menu category-menu vertical-menu">
                       {" "}
                       <li>
-                        <Link to="shop-fullwidth-banner.html">
+                        <Link to="/shop">
                           <i>
                             {" "}
                             <FaRegBuilding />
@@ -280,28 +274,28 @@ const Header = () => {
                                                     <hr className="divider" />
                                                     <ul>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">New Arrivals</Link>
+                                                            <Link to="/shop">New Arrivals</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Best Sellers</Link>
+                                                            <Link to="/shop">Best Sellers</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Trending</Link>
+                                                            <Link to="/shop">Trending</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Clothing</Link>
+                                                            <Link to="/shop">Clothing</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Shoes</Link>
+                                                            <Link to="/shop">Shoes</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Bags</Link>
+                                                            <Link to="/shop">Bags</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Accessories</Link>
+                                                            <Link to="/shop">Accessories</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">
+                                                            <Link to="/shop">
                                                                 Jewlery &amp; Watches
                                                             </Link>
                                                         </li>
@@ -312,28 +306,28 @@ const Header = () => {
                                                     <hr className="divider" />
                                                     <ul>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">New Arrivals</Link>
+                                                            <Link to="/shop">New Arrivals</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Best Sellers</Link>
+                                                            <Link to="/shop">Best Sellers</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Trending</Link>
+                                                            <Link to="/shop">Trending</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Clothing</Link>
+                                                            <Link to="/shop">Clothing</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Shoes</Link>
+                                                            <Link to="/shop">Shoes</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Bags</Link>
+                                                            <Link to="/shop">Bags</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">Accessories</Link>
+                                                            <Link to="/shop">Accessories</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="shop-fullwidth-banner.html">
+                                                            <Link to="/shop">
                                                                 Jewlery &amp; Watches
                                                             </Link>
                                                         </li>
@@ -370,7 +364,7 @@ const Header = () => {
                                             </ul> */}
                       </li>
                       <li>
-                        <Link to="shop-fullwidth-banner.html">
+                        <Link to="/shop">
                           <i>
                             {" "}
                             <GiWoodPile />
@@ -379,7 +373,7 @@ const Header = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link to="shop-fullwidth-banner.html">
+                        <Link to="/shop">
                           <i>
                             <RiLandscapeLine />
                           </i>
@@ -387,7 +381,7 @@ const Header = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link to="shop-fullwidth-banner.html">
+                        <Link to="/shop">
                           <i>
                             <VscTools />
                           </i>
@@ -425,7 +419,7 @@ const Header = () => {
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="shop-fullwidth-banner.html">
+                                                        <Link to="/shop">
                                                             Full Width Banner
                                                         </Link>
                                                     </li>
@@ -549,7 +543,7 @@ const Header = () => {
                                                 <h4 className="menu-title">Product Layouts</h4>
                                                 <ul>
                                                     <li>
-                                                        <Link to="product-default.html">
+                                                        <Link to="/shop">
                                                             Default<span className="tip tip-hot">Hot</span>
                                                         </Link>
                                                     </li>
@@ -730,7 +724,7 @@ const Header = () => {
                                                 <Link to="become-a-vendor.html">Become A Vendor</Link>
                                             </li>
                                             <li>
-                                                <Link to="contact-us.html">Contact Us</Link>
+                                                <Link to="#">Contact Us</Link>
                                             </li>
                                             <li>
                                                 <Link to="faq.html">FAQs</Link>
@@ -816,7 +810,7 @@ const Header = () => {
                             </nav> */}
               </div>
               <div className="header-right">
-                <Link to="#" className="d-xl-show">
+                <Link to="/shop" className="d-xl-show">
                   <i className="w-icon-sale mr-1" />
                   Sales{" "}
                 </Link>

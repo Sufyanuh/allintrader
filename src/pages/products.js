@@ -225,7 +225,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/1.jpg"
                             alt="Product"
@@ -261,7 +261,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Electronics</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">3D Television</Link>
+                          <Link to="/product_detail">3D Television</Link>
                         </h3>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -272,7 +272,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (3 reviews)
@@ -287,7 +287,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/2-1.jpg"
                             alt="Product"
@@ -340,7 +340,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Electronics</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Alarm Clock With Lamp
                           </Link>
                         </h3>
@@ -353,7 +353,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (10 reviews)
@@ -371,7 +371,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/3.jpg"
                             alt="Product"
@@ -407,7 +407,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Electronics</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">Apple Laptop</Link>
+                          <Link to="/product_detail">Apple Laptop</Link>
                         </h3>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -418,7 +418,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (5 reviews)
@@ -433,7 +433,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/4.jpg"
                             alt="Product"
@@ -469,7 +469,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Electronics</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Attachable Charge Alarm
                           </Link>
                         </h3>
@@ -482,7 +482,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (7 reviews)
@@ -497,7 +497,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/5.jpg"
                             alt="Product"
@@ -533,7 +533,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Fashion</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">Best Travel Bag</Link>
+                          <Link to="/product_detail">Best Travel Bag</Link>
                         </h3>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -544,7 +544,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (4 reviews)
@@ -559,7 +559,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/6.jpg"
                             alt="Product"
@@ -595,7 +595,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Sports</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Black Stunt Motor
                           </Link>
                         </h3>
@@ -608,7 +608,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (12 reviews)
@@ -623,7 +623,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/7-1.jpg"
                             alt="Product"
@@ -665,7 +665,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Fashion</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">Blue Sky Trunk</Link>
+                          <Link to="/product_detail">Blue Sky Trunk</Link>
                         </h3>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -676,7 +676,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (9 reviews)
@@ -691,7 +691,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/8.jpg"
                             alt="Product"
@@ -727,7 +727,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Beauty</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Bodycare Smooth Powder
                           </Link>
                         </h3>
@@ -740,7 +740,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (4 reviews)
@@ -755,7 +755,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/9.jpg"
                             alt="Product"
@@ -791,7 +791,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Electronics</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Bright Green IPhone
                           </Link>
                         </h3>
@@ -804,7 +804,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (4 reviews)
@@ -819,7 +819,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/10.jpg"
                             alt="Product"
@@ -855,7 +855,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Fashion</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Cavin Fashion Suede Handbag
                           </Link>
                         </h3>
@@ -868,7 +868,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (4 reviews)
@@ -883,7 +883,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/11-1.jpg"
                             alt="Product"
@@ -925,7 +925,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Electronics</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Charming Design Watch
                           </Link>
                         </h3>
@@ -938,7 +938,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (10 reviews)
@@ -953,7 +953,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/12.jpg"
                             alt="Product"
@@ -989,7 +989,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Fashion</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Classic Simple Backpack
                           </Link>
                         </h3>
@@ -1002,7 +1002,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (9 reviews)
@@ -1017,7 +1017,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/13.jpg"
                             alt="Product"
@@ -1053,7 +1053,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Watches</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">Smart Watch</Link>
+                          <Link to="/product_detail">Smart Watch</Link>
                         </h3>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -1064,7 +1064,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (9 reviews)
@@ -1079,7 +1079,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/19-1.jpg"
                             alt="Product"
@@ -1121,7 +1121,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Accessories</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">Handmade Ring</Link>
+                          <Link to="/product_detail">Handmade Ring</Link>
                         </h3>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -1132,7 +1132,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (1 reviews)
@@ -1147,7 +1147,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/20.jpg"
                             alt="Product"
@@ -1183,7 +1183,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Accessories</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">Pencil Case</Link>
+                          <Link to="/product_detail">Pencil Case</Link>
                         </h3>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -1194,7 +1194,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (4 reviews)
@@ -1209,7 +1209,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/shop/18.jpg"
                             alt="Product"
@@ -1245,7 +1245,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Medical</Link>
                         </div>
                         <h3 className="product-name">
-                          <Link to="product-default.html">CT Marchine</Link>
+                          <Link to="/product_detail">CT Marchine</Link>
                         </h3>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -1256,7 +1256,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (4 reviews)
@@ -1271,7 +1271,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/products/default/5.jpg"
                             alt="Product"
@@ -1307,7 +1307,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Electronics</Link>
                         </div>
                         <h4 className="product-name">
-                          <Link to="product-default.html">Drone</Link>
+                          <Link to="/product_detail">Drone</Link>
                         </h4>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -1318,7 +1318,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (3 reviews)
@@ -1333,7 +1333,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/products/default/6.jpg"
                             alt="Product"
@@ -1369,7 +1369,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Electronics</Link>
                         </div>
                         <h4 className="product-name">
-                          <Link to="product-default.html">Official Camera</Link>
+                          <Link to="/product_detail">Official Camera</Link>
                         </h4>
                         <div className="ratings-container">
                           <div className="ratings-full">
@@ -1380,7 +1380,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (3 reviews)
@@ -1398,7 +1398,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/products/default/7-1.jpg"
                             alt="Product"
@@ -1440,7 +1440,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Accessories</Link>
                         </div>
                         <h4 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Phone Charge Pad
                           </Link>
                         </h4>
@@ -1453,7 +1453,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (8 reviews)
@@ -1468,7 +1468,7 @@ const Products = () => {
                   <div className="product-wrap">
                     <div className="product text-center">
                       <figure className="product-media">
-                        <Link to="product-default.html">
+                        <Link to="/product_detail">
                           <img
                             src="/assets/images/products/default/8.jpg"
                             alt="Product"
@@ -1504,7 +1504,7 @@ const Products = () => {
                           <Link to="shop-banner-sidebar.html">Accessories</Link>
                         </div>
                         <h4 className="product-name">
-                          <Link to="product-default.html">
+                          <Link to="/product_detail">
                             Fashionalble Pencil
                           </Link>
                         </h4>
@@ -1517,7 +1517,7 @@ const Products = () => {
                             <span className="tooltiptext tooltip-top" />
                           </div>
                           <Link
-                            to="product-default.html"
+                            to="/product_detail"
                             className="rating-reviews"
                           >
                             (9 reviews)

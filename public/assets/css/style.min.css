@@ -15088,8 +15088,16 @@ body .product-popup {
 }
 .header-search.hs-expanded input.form-control {
   color: #666;
-  border-right: none;
-  border-left: none;
+  /* border-right: none;
+  border-left: none; */
+}
+.category-dropdown:hover > a i {
+  
+  color: white ;
+}
+.category-dropdown:hover > a span {
+  
+  color: white ;
 }
 .header-search.hs-expanded .btn-search {
   display: -webkit-box;
