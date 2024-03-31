@@ -92,7 +92,7 @@ const Home = () => {
 
             <div className=" row cols-lg-6 cols-md-5 cols-sm-3 cols-2">
               <div className=" category category-classic category-absolute overlay-zoom br-xs">
-                <a href="shop-banner-sidebar.html" className="category-media">
+                <a href="/shop" className="category-media">
                   <img
                     src="/assets/images/demos/demo1/categories/2-1.jpg"
                     style={{ width: 250, height: 250 }}
@@ -106,7 +106,7 @@ const Home = () => {
                     BUILDING MATERIALS
                   </h4>
                   <a
-                    href="shop-banner-sidebar.html"
+                    href="/shop"
                     className="btn btn-primary btn-link btn-underline text-white"
                   >
                     Shop Now
@@ -114,7 +114,7 @@ const Home = () => {
                 </div>
               </div>
               <div className=" category category-classic category-absolute overlay-zoom br-xs">
-                <a href="shop-banner-sidebar.html" className="category-media">
+                <a href="/shop" className="category-media">
                   <img
                     src="/assets/images/demos/demo1/categories/2-2.jpg"
                     style={{ width: 250, height: 250 }}
@@ -126,7 +126,7 @@ const Home = () => {
                 <div className="category-content">
                   <h4 className="category-name text-white">TIMBER</h4>
                   <a
-                    href="shop-banner-sidebar.html"
+                    href="/shop"
                     className="btn btn-primary btn-link btn-underline text-white"
                   >
                     Shop Now
@@ -134,7 +134,7 @@ const Home = () => {
                 </div>
               </div>
               <div className=" category category-classic category-absolute overlay-zoom br-xs">
-                <a href="shop-banner-sidebar.html" className="category-media">
+                <a href="/shop" className="category-media">
                   <img
                     src="/assets/images/demos/demo1/categories/2-3.jpg"
                     style={{ width: 250, height: 250 }}
@@ -146,7 +146,7 @@ const Home = () => {
                 <div className="category-content">
                   <h4 className="category-name text-white">LANDSCAPING</h4>
                   <a
-                    href="shop-banner-sidebar.html"
+                    href="/shop"
                     className="btn btn-primary btn-link btn-underline text-white"
                   >
                     Shop Now
@@ -154,7 +154,7 @@ const Home = () => {
                 </div>
               </div>
               <div className=" category category-classic category-absolute overlay-zoom br-xs">
-                <a href="shop-banner-sidebar.html" className="category-media">
+                <a href="/shop" className="category-media">
                   <img
                     src="/assets/images/demos/demo1/categories/2-4.jpg"
                     style={{ width: 250, height: 250 }}
@@ -168,7 +168,7 @@ const Home = () => {
                     FIXING & ADHESIVES
                   </h4>
                   <a
-                    href="shop-banner-sidebar.html"
+                    href="/shop"
                     className="btn btn-primary btn-link btn-underline text-white"
                   >
                     Shop Now
@@ -176,7 +176,7 @@ const Home = () => {
                 </div>
               </div>
               <div className=" category category-classic category-absolute overlay-zoom br-xs">
-                <a href="shop-banner-sidebar.html" className="category-media">
+                <a href="/shop" className="category-media">
                   <img
                     src="/assets/images/demos/demo1/categories/2-5.jpg"
                     style={{ width: 250, height: 250 }}
@@ -188,7 +188,7 @@ const Home = () => {
                 <div className="category-content">
                   <h4 className="category-name text-white">DECORATION</h4>
                   <a
-                    href="shop-banner-sidebar.html"
+                    href="/shop"
                     className="btn btn-primary btn-link btn-underline text-white"
                   >
                     Shop Now
@@ -196,7 +196,7 @@ const Home = () => {
                 </div>
               </div>
               <div className=" category category-classic category-absolute overlay-zoom br-xs mb-3">
-                <a href="shop-banner-sidebar.html" className="category-media">
+                <a href="/shop" className="category-media">
                   <img
                     src="/assets/images/demos/demo1/categories/2-6.jpg"
                     style={{ width: 250, height: 250 }}
@@ -210,7 +210,7 @@ const Home = () => {
                     TOOLS AND SAFETY WEAR
                   </h4>
                   <a
-                    href="shop-banner-sidebar.html"
+                    href="/shop"
                     className="btn btn-primary btn-link btn-underline text-white"
                   >
                     Shop Now
@@ -218,7 +218,7 @@ const Home = () => {
                 </div>
               </div>
               <div className=" category category-classic category-absolute overlay-zoom br-xs">
-                <a href="shop-banner-sidebar.html" className="category-media">
+                <a href="/shop" className="category-media">
                   <img
                     src="/assets/images/demos/demo1/categories/2-7.jpg"
                     style={{ width: 250, height: 250 }}
@@ -230,7 +230,7 @@ const Home = () => {
                 <div className="category-content">
                   <h4 className="category-name text-black">HIRE SERVICES</h4>
                   <a
-                    href="shop-banner-sidebar.html"
+                    href="/shop"
                     className="btn btn-primary btn-link btn-underline text-black"
                   >
                     Shop Now
