@@ -222,108 +222,33 @@ const Products = () => {
                   </div>
                 </nav>
                 <div className="product-wrapper row cols-xl-5 cols-lg-3 cols-md-4 cols-sm-3 cols-2">
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/1.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Electronics</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">3D Television</Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
+                  {[1, 2, 3, 4, 5].map((item, index) => (
+                    <div className="product-wrap">
+                      <div className="product text-center">
+                        <figure className="product-media">
+                          <a href="/product_detail">
+                            <img
+                              src={`/assets/images/shop/${item}.jpg`}
+                              alt="Product"
+                              width={300}
+                              height={338}
                             />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (3 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$220.00 - $230.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/2-1.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                          <img
-                            src="/assets/images/shop/2-2.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-countdown-container">
+                          </a>
                           <div
-                            className="product-countdown countdown-compact"
-                            data-until="2021, 9, 9"
-                            data-format="DHMS"
-                            data-compact="false"
-                            data-labels-short="Days, Hours, Mins, Secs"
+                            className="product-action-horizontal"
+                            style={{ width: "max-content" }}
                           >
-                            00:00:00:00
-                          </div>
-                        </div>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-cart w-icon-cart"
+                              title="Add to cart"
+                            />
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-wishlist w-icon-heart"
+                              title="Wishlist"
+                            />
+                            {/* <Link
                             to="#"
                             className="btn-product-icon btn-compare w-icon-compare"
                             title="Compare"
@@ -332,65 +257,69 @@ const Products = () => {
                             to="#"
                             className="btn-product-icon btn-quickview w-icon-search"
                             title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Electronics</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">
-                            Alarm Clock With Lamp
-                          </Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
+                          /> */}
                           </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (10 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">
-                            <ins className="new-price">$30.00</ins>
-                            <del className="old-price">$60.00</del>
+                        </figure>
+                        <div className="product-details">
+                          <div className="product-cat">
+                            <Link to="shop-banner-sidebar.html">
+                              Electronics
+                            </Link>
+                          </div>
+                          <h3 className="product-name">
+                            <a href="/product_detail">3D Television</a>
+                          </h3>
+                          <div className="ratings-container">
+                            <div className="ratings-full">
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
+                              <span className="tooltiptext tooltip-top" />
+                            </div>
+                            <Link
+                              to="/product_detail"
+                              className="rating-reviews"
+                            >
+                              (3 reviews)
+                            </Link>
+                          </div>
+                          <div className="product-pa-wrapper">
+                            <div className="product-price">
+                              $220.00 - $230.00
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/3.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
+                  ))}
+                  {[2, 1, 4, 3, 5].map((item, index) => (
+                    <div className="product-wrap">
+                      <div className="product text-center">
+                        <figure className="product-media">
+                          <a href="/product_detail">
+                            <img
+                              src={`/assets/images/shop/${item}.jpg`}
+                              alt="Product"
+                              width={300}
+                              height={338}
+                            />
+                          </a>
+                          <div
+                            className="product-action-horizontal"
+                            style={{ width: "max-content" }}
+                          >
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-cart w-icon-cart"
+                              title="Add to cart"
+                            />
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-wishlist w-icon-heart"
+                              title="Wishlist"
+                            />
+                            {/* <Link
                             to="#"
                             className="btn-product-icon btn-compare w-icon-compare"
                             title="Compare"
@@ -399,60 +328,69 @@ const Products = () => {
                             to="#"
                             className="btn-product-icon btn-quickview w-icon-search"
                             title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Electronics</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">Apple Laptop</Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "80%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
+                          /> */}
                           </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (5 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$1,000.00</div>
+                        </figure>
+                        <div className="product-details">
+                          <div className="product-cat">
+                            <Link to="shop-banner-sidebar.html">
+                              Electronics
+                            </Link>
+                          </div>
+                          <h3 className="product-name">
+                            <a href="/product_detail">3D Television</a>
+                          </h3>
+                          <div className="ratings-container">
+                            <div className="ratings-full">
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
+                              <span className="tooltiptext tooltip-top" />
+                            </div>
+                            <Link
+                              to="/product_detail"
+                              className="rating-reviews"
+                            >
+                              (3 reviews)
+                            </Link>
+                          </div>
+                          <div className="product-pa-wrapper">
+                            <div className="product-price">
+                              $220.00 - $230.00
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/4.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
+                  ))}
+                  {[1, 2, 3, 4, 5].reverse().map((item, index) => (
+                    <div className="product-wrap">
+                      <div className="product text-center">
+                        <figure className="product-media">
+                          <a href="/product_detail">
+                            <img
+                              src={`/assets/images/shop/${item}.jpg`}
+                              alt="Product"
+                              width={300}
+                              height={338}
+                            />
+                          </a>
+                          <div
+                            className="product-action-horizontal"
+                            style={{ width: "max-content" }}
+                          >
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-cart w-icon-cart"
+                              title="Add to cart"
+                            />
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-wishlist w-icon-heart"
+                              title="Wishlist"
+                            />
+                            {/* <Link
                             to="#"
                             className="btn-product-icon btn-compare w-icon-compare"
                             title="Compare"
@@ -461,62 +399,69 @@ const Products = () => {
                             to="#"
                             className="btn-product-icon btn-quickview w-icon-search"
                             title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Electronics</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">
-                            Attachable Charge Alarm
-                          </Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "60%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
+                          /> */}
                           </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (7 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$15.00</div>
+                        </figure>
+                        <div className="product-details">
+                          <div className="product-cat">
+                            <Link to="shop-banner-sidebar.html">
+                              Electronics
+                            </Link>
+                          </div>
+                          <h3 className="product-name">
+                            <a href="/product_detail">3D Television</a>
+                          </h3>
+                          <div className="ratings-container">
+                            <div className="ratings-full">
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
+                              <span className="tooltiptext tooltip-top" />
+                            </div>
+                            <Link
+                              to="/product_detail"
+                              className="rating-reviews"
+                            >
+                              (3 reviews)
+                            </Link>
+                          </div>
+                          <div className="product-pa-wrapper">
+                            <div className="product-price">
+                              $220.00 - $230.00
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/5.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
+                  ))}
+                  {[1, 2, 3, 4, 5].map((item, index) => (
+                    <div className="product-wrap">
+                      <div className="product text-center">
+                        <figure className="product-media">
+                          <a href="/product_detail">
+                            <img
+                              src={`/assets/images/shop/${item}.jpg`}
+                              alt="Product"
+                              width={300}
+                              height={338}
+                            />
+                          </a>
+                          <div
+                            className="product-action-horizontal"
+                            style={{ width: "max-content" }}
+                          >
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-cart w-icon-cart"
+                              title="Add to cart"
+                            />
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-wishlist w-icon-heart"
+                              title="Wishlist"
+                            />
+                            {/* <Link
                             to="#"
                             className="btn-product-icon btn-compare w-icon-compare"
                             title="Compare"
@@ -525,60 +470,69 @@ const Products = () => {
                             to="#"
                             className="btn-product-icon btn-quickview w-icon-search"
                             title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Fashion</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">Best Travel Bag</Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "80%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
+                          /> */}
                           </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (4 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$83.00</div>
+                        </figure>
+                        <div className="product-details">
+                          <div className="product-cat">
+                            <Link to="shop-banner-sidebar.html">
+                              Electronics
+                            </Link>
+                          </div>
+                          <h3 className="product-name">
+                            <a href="/product_detail">3D Television</a>
+                          </h3>
+                          <div className="ratings-container">
+                            <div className="ratings-full">
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
+                              <span className="tooltiptext tooltip-top" />
+                            </div>
+                            <Link
+                              to="/product_detail"
+                              className="rating-reviews"
+                            >
+                              (3 reviews)
+                            </Link>
+                          </div>
+                          <div className="product-pa-wrapper">
+                            <div className="product-price">
+                              $220.00 - $230.00
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/6.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
+                  ))}
+                  {[1, 2, 3, 4, 5].map((item, index) => (
+                    <div className="product-wrap">
+                      <div className="product text-center">
+                        <figure className="product-media">
+                          <a href="/product_detail">
+                            <img
+                              src={`/assets/images/shop/${item}.jpg`}
+                              alt="Product"
+                              width={300}
+                              height={338}
+                            />
+                          </a>
+                          <div
+                            className="product-action-horizontal"
+                            style={{ width: "max-content" }}
+                          >
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-cart w-icon-cart"
+                              title="Add to cart"
+                            />
+                            <Link
+                              to="#"
+                              className="btn-product-icon btn-wishlist w-icon-heart"
+                              title="Wishlist"
+                            />
+                            {/* <Link
                             to="#"
                             className="btn-product-icon btn-compare w-icon-compare"
                             title="Compare"
@@ -587,948 +541,42 @@ const Products = () => {
                             to="#"
                             className="btn-product-icon btn-quickview w-icon-search"
                             title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Sports</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">
-                            Black Stunt Motor
-                          </Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
+                          /> */}
                           </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (12 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$374.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/7-1.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                          <img
-                            src="/assets/images/shop/7-2.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Fashion</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">Blue Sky Trunk</Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
+                        </figure>
+                        <div className="product-details">
+                          <div className="product-cat">
+                            <Link to="shop-banner-sidebar.html">
+                              Electronics
+                            </Link>
                           </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (9 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$85.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/8.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Beauty</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">
-                            Bodycare Smooth Powder
-                          </Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "60%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
+                          <h3 className="product-name">
+                            <a href="/product_detail">3D Television</a>
+                          </h3>
+                          <div className="ratings-container">
+                            <div className="ratings-full">
+                              <span
+                                className="ratings"
+                                style={{ width: "100%" }}
+                              />
+                              <span className="tooltiptext tooltip-top" />
+                            </div>
+                            <Link
+                              to="/product_detail"
+                              className="rating-reviews"
+                            >
+                              (3 reviews)
+                            </Link>
                           </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (4 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$25.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/9.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Electronics</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">
-                            Bright Green IPhone
-                          </Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "80%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (4 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$950.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/10.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Fashion</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">
-                            Cavin Fashion Suede Handbag
-                          </Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "80%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (4 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$163.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/11-1.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                          <img
-                            src="/assets/images/shop/11-2.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Electronics</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">
-                            Charming Design Watch
-                          </Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (10 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$30.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/12.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Fashion</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">
-                            Classic Simple Backpack
-                          </Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (9 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$85.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/13.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Watches</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">Smart Watch</Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (9 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$90.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/19-1.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                          <img
-                            src="/assets/images/shop/19-2.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Accessories</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">Handmade Ring</Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (1 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$5.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/20.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Accessories</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">Pencil Case</Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "60%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (4 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$54.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/shop/18.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Medical</Link>
-                        </div>
-                        <h3 className="product-name">
-                          <Link to="/product_detail">CT Marchine</Link>
-                        </h3>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "60%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (4 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$236.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/products/default/5.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Electronics</Link>
-                        </div>
-                        <h4 className="product-name">
-                          <Link to="/product_detail">Drone</Link>
-                        </h4>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (3 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$632.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/products/default/6.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Electronics</Link>
-                        </div>
-                        <h4 className="product-name">
-                          <Link to="/product_detail">Official Camera</Link>
-                        </h4>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (3 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">
-                            <ins className="new-price">$263.00</ins>
-                            <del className="old-price">$300.00</del>
+                          <div className="product-pa-wrapper">
+                            <div className="product-price">
+                              $220.00 - $230.00
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/products/default/7-1.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                          <img
-                            src="/assets/images/products/default/7-2.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Accessories</Link>
-                        </div>
-                        <h4 className="product-name">
-                          <Link to="/product_detail">
-                            Phone Charge Pad
-                          </Link>
-                        </h4>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "80%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (8 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$23.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-wrap">
-                    <div className="product text-center">
-                      <figure className="product-media">
-                        <Link to="/product_detail">
-                          <img
-                            src="/assets/images/products/default/8.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                          />
-                        </Link>
-                        <div className="product-action-horizontal">
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Wishlist"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Compare"
-                          />
-                          <Link
-                            to="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quick View"
-                          />
-                        </div>
-                      </figure>
-                      <div className="product-details">
-                        <div className="product-cat">
-                          <Link to="shop-banner-sidebar.html">Accessories</Link>
-                        </div>
-                        <h4 className="product-name">
-                          <Link to="/product_detail">
-                            Fashionalble Pencil
-                          </Link>
-                        </h4>
-                        <div className="ratings-container">
-                          <div className="ratings-full">
-                            <span
-                              className="ratings"
-                              style={{ width: "100%" }}
-                            />
-                            <span className="tooltiptext tooltip-top" />
-                          </div>
-                          <Link
-                            to="/product_detail"
-                            className="rating-reviews"
-                          >
-                            (9 reviews)
-                          </Link>
-                        </div>
-                        <div className="product-pa-wrapper">
-                          <div className="product-price">$50.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
               {/* End of Shop Main Content */}
@@ -1616,7 +664,7 @@ const Products = () => {
                           <figure className="product-media">
                             <Link to="#">
                               <img
-                                src="/assets/images/shop/13.jpg"
+                                src="/assets/images/shop/1.jpg"
                                 alt="Product"
                                 width={100}
                                 height={113}
@@ -1643,7 +691,7 @@ const Products = () => {
                           <figure className="product-media">
                             <Link to="#">
                               <img
-                                src="/assets/images/shop/14.jpg"
+                                src="/assets/images/shop/2.jpg"
                                 alt="Product"
                                 width={100}
                                 height={113}
@@ -1670,7 +718,7 @@ const Products = () => {
                           <figure className="product-media">
                             <Link to="#">
                               <img
-                                src="/assets/images/shop/15.jpg"
+                                src="/assets/images/shop/3.jpg"
                                 alt="Product"
                                 width={100}
                                 height={113}
@@ -1699,7 +747,7 @@ const Products = () => {
                           <figure className="product-media">
                             <Link to="#">
                               <img
-                                src="/assets/images/shop/16.jpg"
+                                src="/assets/images/shop/4.jpg"
                                 alt="Product"
                                 width={100}
                                 height={113}
@@ -1726,7 +774,7 @@ const Products = () => {
                           <figure className="product-media">
                             <Link to="#">
                               <img
-                                src="/assets/images/shop/17.jpg"
+                                src="/assets/images/shop/5.jpg"
                                 alt="Product"
                                 width={100}
                                 height={113}
@@ -1753,7 +801,7 @@ const Products = () => {
                           <figure className="product-media">
                             <Link to="#">
                               <img
-                                src="/assets/images/shop/18.jpg"
+                                src="/assets/images/shop/3.jpg"
                                 alt="Product"
                                 width={100}
                                 height={113}

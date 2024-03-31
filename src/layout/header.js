@@ -93,14 +93,14 @@ const Header = () => {
                 className="mobile-menu-toggle  w-icon-hamburger"
                 aria-label="menu-toggle"
               ></Link>
-              <Link to="/" className="logo ml-lg-0">
+              <a href="/" className="logo ml-lg-0">
                 <img
                   src="/assets/images/logo.png"
                   alt="logo"
                   width={144}
                   height={45}
                 />
-              </Link>
+              </a>
               <form
                 method="get"
                 action="#"
@@ -153,25 +153,25 @@ const Header = () => {
                   <div className="products">
                     <div className="product product-cart">
                       <div className="product-detail">
-                        <Link to="/shop" className="product-name">
+                        <a href="/shop" className="product-name">
                           Beige knitted elas
                           <br />
                           tic runner shoes
-                        </Link>
+                        </a>
                         <div className="price-box">
                           <span className="product-quantity">1</span>
                           <span className="product-price">$25.68</span>
                         </div>
                       </div>
                       <figure className="product-media">
-                        <Link to="/shop">
+                        <a href="/shop">
                           <img
                             src="/assets/images/cart/product-1.jpg"
                             alt="product"
                             height={84}
                             width={94}
                           />
-                        </Link>
+                        </a>
                       </figure>
                       <button
                         className="btn btn-link btn-close"
@@ -182,25 +182,25 @@ const Header = () => {
                     </div>
                     <div className="product product-cart">
                       <div className="product-detail">
-                        <Link to="/shop" className="product-name">
+                        <a href="/shop" className="product-name">
                           Blue utility pina
                           <br />
                           fore denim dress
-                        </Link>
+                        </a>
                         <div className="price-box">
                           <span className="product-quantity">1</span>
                           <span className="product-price">$32.99</span>
                         </div>
                       </div>
                       <figure className="product-media">
-                        <Link to="/shop">
+                        <a href="/shop">
                           <img
                             src="/assets/images/cart/product-2.jpg"
                             alt="product"
                             width={84}
                             height={94}
                           />
-                        </Link>
+                        </a>
                       </figure>
                       <button
                         className="btn btn-link btn-close"
@@ -221,10 +221,7 @@ const Header = () => {
                     >
                       View Cart
                     </Link>
-                    <Link
-                      to="#"
-                      className="btn btn-primary  btn-rounded"
-                    >
+                    <Link to="#" className="btn btn-primary  btn-rounded">
                       Checkout
                     </Link>
                   </div>
@@ -260,13 +257,13 @@ const Header = () => {
                     <ul className="menu category-menu vertical-menu">
                       {" "}
                       <li>
-                        <Link to="/shop">
+                        <a href="/shop">
                           <i>
                             {" "}
                             <FaRegBuilding />
                           </i>
                           BUILDING MATERIALS
-                        </Link>
+                        </a>
                         {/* <ul className="megamenu">
                                                 <li>
                                                     <h4 className="menu-title">
@@ -274,30 +271,30 @@ const Header = () => {
                                                     <hr className="divider" />
                                                     <ul>
                                                         <li>
-                                                            <Link to="/shop">New Arrivals</Link>
+                                                            <a href="/shop">New Arrivals</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Best Sellers</Link>
+                                                            <a href="/shop">Best Sellers</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Trending</Link>
+                                                            <a href="/shop">Trending</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Clothing</Link>
+                                                            <a href="/shop">Clothing</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Shoes</Link>
+                                                            <a href="/shop">Shoes</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Bags</Link>
+                                                            <a href="/shop">Bags</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Accessories</Link>
+                                                            <a href="/shop">Accessories</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">
+                                                            <a href="/shop">
                                                                 Jewlery &amp; Watches
-                                                            </Link>
+                                                            </a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -306,30 +303,30 @@ const Header = () => {
                                                     <hr className="divider" />
                                                     <ul>
                                                         <li>
-                                                            <Link to="/shop">New Arrivals</Link>
+                                                            <a href="/shop">New Arrivals</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Best Sellers</Link>
+                                                            <a href="/shop">Best Sellers</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Trending</Link>
+                                                            <a href="/shop">Trending</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Clothing</Link>
+                                                            <a href="/shop">Clothing</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Shoes</Link>
+                                                            <a href="/shop">Shoes</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Bags</Link>
+                                                            <a href="/shop">Bags</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">Accessories</Link>
+                                                            <a href="/shop">Accessories</a>
                                                         </li>
                                                         <li>
-                                                            <Link to="/shop">
+                                                            <a href="/shop">
                                                                 Jewlery &amp; Watches
-                                                            </Link>
+                                                            </a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -364,29 +361,29 @@ const Header = () => {
                                             </ul> */}
                       </li>
                       <li>
-                        <Link to="/shop">
+                        <a href="/shop">
                           <i>
                             {" "}
                             <GiWoodPile />
                           </i>
                           TIMBER
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/shop">
+                        <a href="/shop">
                           <i>
                             <RiLandscapeLine />
                           </i>
                           LANDSCAPING
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/shop">
+                        <a href="/shop">
                           <i>
                             <VscTools />
                           </i>
                           FIXING & ADHESIVES
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -419,9 +416,9 @@ const Header = () => {
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="/shop">
+                                                        <a href="/shop">
                                                             Full Width Banner
-                                                        </Link>
+                                                        </a>
                                                     </li>
                                                     <li>
                                                         <Link to="shop-horizontal-filter.html">
@@ -543,9 +540,9 @@ const Header = () => {
                                                 <h4 className="menu-title">Product Layouts</h4>
                                                 <ul>
                                                     <li>
-                                                        <Link to="/shop">
+                                                        <a href="/shop">
                                                             Default<span className="tip tip-hot">Hot</span>
-                                                        </Link>
+                                                        </a>
                                                     </li>
                                                     <li>
                                                         <Link to="product-vertical.html">
@@ -810,10 +807,10 @@ const Header = () => {
                             </nav> */}
               </div>
               <div className="header-right">
-                <Link to="/shop" className="d-xl-show">
+                <a href="/shop" className="d-xl-show">
                   <i className="w-icon-sale mr-1" />
                   Sales{" "}
-                </Link>
+                </a>
                 <Link to="#">
                   <i>
                     <GoSkip fontSize={"2rem"} />
