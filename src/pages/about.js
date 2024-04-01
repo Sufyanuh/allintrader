@@ -34,9 +34,7 @@ const About = () => {
                 Consultants Helping Your Business Grow
               </h2>
               <p className=" mx-auto text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor labore et dolore magna aliqua. Venenatis tellu
-                metus
+              We're dedicated marketing consultants committed to fueling your business growth through strategic marketing initiatives and innovative solutions.
               </p>
               <figure className="br-lg">
                 <img
@@ -63,10 +61,9 @@ const About = () => {
                       </div>
                       <div className="card-body expanded" id="collapse3-1">
                         <p className="mb-0">
-                          Lorem ipsum dolor sit eiusamet, consectetur adipiscing
-                          elit, sed do eius mod tempor incididunt ut labore et
-                          dolore magna aliqua. Venenatis tell us in metus
-                          vulputate eu scelerisque felis. Vel pretium vulp.
+                          Customer service ensures satisfaction by addressing
+                          queries, resolving issues, and providing personalized
+                          assistance, fostering trust and loyalty.
                         </p>
                       </div>
                     </div>
@@ -78,10 +75,10 @@ const About = () => {
                       </div>
                       <div className="card-body collapsed" id="collapse3-2">
                         <p className="mb-0">
-                          Lorem ipsum dolor sit eiusamet, consectetur adipiscing
-                          elit, sed do eius mod tempor incididunt ut labore et
-                          dolore magna aliqua. Venenatis tell us in metus
-                          vulputate eu scelerisque felis. Vel pretium vulp.
+                          Online consultation provides convenient access to
+                          professional advice and services remotely, improving
+                          healthcare accessibility and patient-provider
+                          communication.
                         </p>
                       </div>
                     </div>
@@ -93,10 +90,10 @@ const About = () => {
                       </div>
                       <div className="card-body collapsed" id="collapse3-3">
                         <p className="mb-0">
-                          Lorem ipsum dolor sit eiusamet, consectetur adipiscing
-                          elit, sed do eius mod tempor incididunt ut labore et
-                          dolore magna aliqua. Venenatis tell us in metus
-                          vulputate eu scelerisque felis. Vel pretium vulp.
+                          Sales management involves overseeing the processes of
+                          selling products or services, including planning,
+                          organizing, directing, and controlling sales
+                          activities to achieve organizational goals.
                         </p>
                       </div>
                     </div>

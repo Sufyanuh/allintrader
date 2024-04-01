@@ -174,7 +174,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="footer-left">
               <p className="copyright">
-                Copyright © 2021 All in Trade. All Rights Reserved.
+                Copyright © 2021 All In Trading Ltd 10622683 All Rights Reserved.
               </p>
             </div>
             <div className="footer-right">

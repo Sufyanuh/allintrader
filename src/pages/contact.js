@@ -29,10 +29,10 @@ const Contact = () => {
           <div className="container">
             <section className="content-title-section mb-10">
               <h3 className="title title-center mb-3">Contact Information</h3>
-              <p className="text-center">
+              {/* <p className="text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut
-              </p>
+              </p> */}
             </section>
             {/* End of Contact Title Section */}
             <section className="contact-information-section mb-10">
@@ -106,7 +106,7 @@ const Contact = () => {
             <hr className="divider mb-10 pb-1" />
             <section className="contact-section">
               <div className="row gutter-lg pb-3">
-                <div className="col-lg-6 mb-8">
+                {/* <div className="col-lg-6 mb-8">
                   <h4 className="title mb-3">People usually ask these</h4>
                   <div className="accordion accordion-bg accordion-gutter-md accordion-border">
                     <div className="card">
@@ -185,7 +185,20 @@ const Contact = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                <div className="col-md-6 mb-4">
+              <div className="banner banner-fixed br-xs">
+                <figure>
+                  <img
+                    src="/assets/images/demos/demo1/categories\2-6.jpg"
+                    alt="Category Banner"
+                    width={610}
+                    height={100}
+                    id="bannerContact1"
+                  />
+                </figure>
+              </div>
+            </div>
                 <div className="col-lg-6 mb-8">
                   <h4 className="title mb-3">Send Us a Message</h4>
                   <form
