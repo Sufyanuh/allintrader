@@ -35,7 +35,7 @@ const Contact = () => {
               </p> */}
             </section>
             {/* End of Contact Title Section */}
-            <section className="contact-information-section mb-10">
+            <section className="contact-information-section mb-10"> 
               <div
                 className=" swiper-container swiper-theme "
                 data-swiper-options="{
@@ -54,7 +54,7 @@ const Contact = () => {
                       }
                   }"
               >
-                <div className="swiper-wrapper row cols-xl-4 cols-md-3 cols-sm-2 cols-1">
+                <div className="swiper-wrapper row cols-xl-4 cols-md-3 cols-sm-2 cols-1 d-flex justify-content-center ">
                   <div className="swiper-slide icon-box text-center icon-box-primary">
                     <span className="icon-box-icon icon-email">
                       <i className="w-icon-envelop-closed" />
@@ -62,17 +62,18 @@ const Contact = () => {
                     <div className="icon-box-content">
                       <h4 className="icon-box-title">E-mail Address</h4>
                       <p>
-                        <a
+                        {/* <a
                           href="https://portotheme.com/cdn-cgi/l/email-protection"
                           className="__cf_email__"
                           data-cfemail="5538343c3915302d34382539307b363a38"
                         >
                           [email&nbsp;protected]
-                        </a>
+                        </a> */}
+                         Chris@all-in-trading.co.uk
                       </p>
                     </div>
                   </div>
-                  <div className="swiper-slide icon-box text-center icon-box-primary">
+                  {/* <div className="swiper-slide icon-box text-center icon-box-primary">
                     <span className="icon-box-icon icon-headphone">
                       <i className="w-icon-headphone" />
                     </span>
@@ -80,8 +81,8 @@ const Contact = () => {
                       <h4 className="icon-box-title">Phone Number</h4>
                       <p>(123) 456-7890 / (123) 456-9870</p>
                     </div>
-                  </div>
-                  <div className="swiper-slide icon-box text-center icon-box-primary">
+                  </div> */}
+                  {/* <div className="swiper-slide icon-box text-center icon-box-primary">
                     <span className="icon-box-icon icon-map-marker">
                       <i className="w-icon-map-marker" />
                     </span>
@@ -98,7 +99,7 @@ const Contact = () => {
                       <h4 className="icon-box-title">Fax</h4>
                       <p>1-800-570-7777</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </section>

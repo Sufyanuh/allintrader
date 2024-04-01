@@ -67,12 +67,12 @@ const Footer = () => {
                     <p className="widget-about-title">
                       Got Question? Mail us 24/7
                     </p>
-                    <a to="#" className="widget-about-call">
+                    {/* <a to="#" className="widget-about-call">
                       Accounts@all-in-trading.co.uk
                     </a>
                     <a to="#" className="widget-about-call">
                       Admin@all-in-trading.co.uk
-                    </a>
+                    </a> */}
                     <a to="#" className="widget-about-call">
                       Chris@all-in-trading.co.uk
                     </a>
