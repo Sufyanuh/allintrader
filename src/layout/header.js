@@ -60,7 +60,7 @@ const Header = () => {
               {/* <Link to="blog.html" className="d-lg-show">
                 Blog
               </Link> */}
-              <Link to="/contact-usd  121314161w17w1" className="d-lg-show">
+              <Link to="/contact-us" className="d-lg-show">
                 Contact Us
               </Link>
               <Link to="/about-us" className="d-lg-show">
