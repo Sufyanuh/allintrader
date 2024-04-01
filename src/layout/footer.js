@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -54,49 +55,49 @@ const Footer = () => {
             <div className="row">
               <div className="col-lg-4 col-sm-6">
                 <div className="widget widget-about">
-                  <Link href="demo1.html" className="logo-footer">
+                  <a href="demo1.html" className="logo-footer">
                     <img
                       src="/assets/images/logo.png"
                       alt="logo-footer"
                       width={144}
                       height={45}
                     />
-                  </Link>
+                  </a>
                   <div className="widget-body">
                     <p className="widget-about-title">
                       Got Question? Mail us 24/7
                     </p>
-                    <Link to="#" className="widget-about-call">
+                    <a to="#" className="widget-about-call">
                       Accounts@all-in-trading.co.uk
-                    </Link>
-                    <Link to="#" className="widget-about-call">
+                    </a>
+                    <a to="#" className="widget-about-call">
                       Admin@all-in-trading.co.uk
-                    </Link>
-                    <Link to="#" className="widget-about-call">
+                    </a>
+                    <a to="#" className="widget-about-call">
                       Chris@all-in-trading.co.uk
-                    </Link>
+                    </a>
                     <p className="widget-about-desc">
                       Register now to get updates on pronot get up icons &amp;
                       coupons ster now toon.
                     </p>
                     <div className="social-icons social-icons-colored">
-                      <Link
+                      <a
                         href="#"
                         className="social-icon social-facebook w-icon-facebook"
                       />
-                      <Link
+                      <a
                         href="#"
                         className="social-icon social-twitter w-icon-twitter"
                       />
-                      <Link
+                      <a
                         href="#"
                         className="social-icon social-instagram w-icon-instagram"
                       />
-                      <Link
+                      <a
                         href="#"
                         className="social-icon social-youtube w-icon-youtube"
                       />
-                      <Link
+                      <a
                         href="#"
                         className="social-icon social-pinterest w-icon-pinterest"
                       />
@@ -109,28 +110,28 @@ const Footer = () => {
                   <h3 className="widget-title">INFORMATION</h3>
                   <ul className="widget-body">
                     <li>
-                      <Link href="/about-us">About Us</Link>
+                      <a href="/about-us">About Us</a>
                     </li>
                     <li>
-                      <Link href="#">Contact us</Link>
+                      <a href="/easter">Easter Opening Hours</a>
                     </li>
                     <li>
-                      <Link href="#">Easter Opening Hours</Link>
+                      <a href="/responsible">Responsible Sourcing</a>
+                    </li>
+                    {/* <li>
+                      <a href="#">Rose Group</a>
+                    </li> */}
+                    <li>
+                      <a href="/terms">Terms & Conditions</a>
                     </li>
                     <li>
-                      <Link href="#">Responsible Sourcing</Link>
+                      <a href="/privacy">Privacy Notice</a>
                     </li>
+                    {/* <li>
+                      <a href="#">Cookies</a>
+                    </li> */}
                     <li>
-                      <Link href="#">Rose Group</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Terms & Conditions</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Privacy Notice</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Cookies</Link>
+                      <a href="/contact-us">Contact us</a>
                     </li>
                   </ul>
                 </div>
@@ -140,10 +141,10 @@ const Footer = () => {
                   <h4 className="widget-title">My Account</h4>
                   <ul className="widget-body">
                     <li>
-                      <Link href="#">My account</Link>
+                      <a href="#">My account</a>
                     </li>
                     <li>
-                      <Link href="#">Addresses</Link>
+                      <a href="#">Addresses</a>
                     </li>
                   </ul>
                 </div>
@@ -152,17 +153,17 @@ const Footer = () => {
                 <div className="widget">
                   <h4 className="widget-title">Customer Service</h4>
                   <ul className="widget-body">
-                    <li>
-                      <Link href="#">Shopping cart</Link>
+                    {/* <li>
+                      <a href="#">Shopping cart</a>
                     </li>
                     <li>
-                      <Link href="#">Branches</Link>
+                      <a href="#">Branches</a>
                     </li>
                     <li>
-                      <Link href="#">Brick and Block Calculator</Link>
-                    </li>
+                      <a href="#">Brick and Block Calculator</a>
+                    </li> */}
                     <li>
-                      <Link href="#">Collection and Delivery FAQs</Link>
+                      <a href="/FAQ">Collection and Delivery FAQs</a>
                     </li>
                   </ul>
                 </div>

@@ -9,7 +9,6 @@ import { GoSkip } from "react-icons/go";
 const Header = () => {
   return (
     <>
-      \
       <header className="header">
         <div className="header-top">
           <div className="container">
@@ -61,11 +60,11 @@ const Header = () => {
               {/* <Link to="blog.html" className="d-lg-show">
                 Blog
               </Link> */}
-              <Link to="#" className="d-lg-show">
+              <Link to="/contact-usd  121314161w17w1" className="d-lg-show">
                 Contact Us
               </Link>
-              <Link to="#" className="d-lg-show">
-                My Account
+              <Link to="/about-us" className="d-lg-show">
+                About Us
               </Link>
               {/* <Link
                 to="/assets/ajax/login.html"
