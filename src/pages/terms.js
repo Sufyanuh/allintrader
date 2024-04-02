@@ -73,7 +73,7 @@ const Terms = () => {
           <p>
             <h5>2.2 Unless the context otherwise requires:</h5>
             <ol>
-              <li>each gender includes the others;</li>
+              <li>each gender udes the others;</li>
               <li>the singular includes the plural and vice versa;</li>
               <li>
                 references to persons include individuals, unincorporated
@@ -229,7 +229,7 @@ const Terms = () => {
               <li>
                 If the delivery location is inaccessible or unfit for delivery
                 at the estimated date, or if items have not been fully paid for
-                as per clause 4.3, All in Trader may charge the customer £100.00
+                as per clause 4.3, All in Trader may charge the customer 100.00
                 as a cancellation fee for the order.
               </li>
             </ol>

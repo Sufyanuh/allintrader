@@ -378,7 +378,7 @@ const Home = () => {
             </div>
           </div>
           <div className="post-wrapper appear-animate mb-4">
-            <div className="title-link-wrapper pb-1 mb-4">
+            {/* <div className="title-link-wrapper pb-1 mb-4">
               <h2 className="title ls-normal mb-0">From Our Blog</h2>
               <a
                 href="blog-listing.html"
@@ -386,8 +386,13 @@ const Home = () => {
               >
                 View All Articles
               </a>
-            </div>
-              <h2 className="ls-normal mb-0" style={{textAlign:"center",padding:"20px"}}>Customers Reviews</h2>
+            </div> */}
+            <h2
+              className="ls-normal mb-0"
+              style={{ textAlign: "center", padding: "20px" }}
+            >
+              Customers Reviews
+            </h2>
             <div className="swiper">
               <div
                 className="swiper-container swiper-theme"
@@ -702,27 +707,48 @@ const Home = () => {
           <div className="row category-banner-wrapper appear-animate pt-6 pb-8">
             <div
               className="col-md-6 mb-4"
-              style={{ paddingLeft: "0px", paddingRight: "0px",backgroundColor:"#001c51" }}
+              style={{
+                paddingLeft: "0px",
+                paddingRight: "0px",
+                backgroundColor: "#001c51",
+              }}
             >
               <div className="banner">
                 <div className="banner-content">
                   <h5 className="banner-subtitle font-weight-normal text-dark bannersubtitle1">
-                  All in Trading
-                    <p className="font-weight-normal text-capitalize" style={{fontSize:"5rem"}}>
-                    Our story
+                    All in Trading
+                    <p
+                      className="font-weight-normal text-capitalize"
+                      style={{ fontSize: "5rem" }}
+                    >
+                      Our story
                     </p>
                   </h5>
-                  <div className="banner-price-info font-weight-normal price-info1" style={{padding:"20px"}}>
-                  A friendly, independent family owned business offering competitively priced quality materials and personal service, all delivered by our unrivalled team of experts. Our branches operate in <strong>Peterborough, Huntingdon </strong>and <strong>Corby</strong> and stock a vast range of building materials and supplies: from bulk products like sand and decorative aggregates, blocks, bricks and lintels, tools / safety wear to landscaping products. We supply both to the trade and public and are always happy to provide knowledgeable advice on any building matter – it’s this individual and personal service that makes us different.
+                  <div
+                    className="banner-price-info font-weight-normal price-info1"
+                    style={{ padding: "20px" }}
+                  >
+                    A friendly, independent family owned business offering
+                    competitively priced quality materials and personal service,
+                    all delivered by our unrivalled team of experts. Our
+                    branches operate in{" "}
+                    <strong>Peterborough, Huntingdon </strong>and{" "}
+                    <strong>Corby</strong> and stock a vast range of building
+                    materials and supplies: from bulk products like sand and
+                    decorative aggregates, blocks, bricks and lintels, tools /
+                    safety wear to landscaping products. We supply both to the
+                    trade and public and are always happy to provide
+                    knowledgeable advice on any building matter – it’s this
+                    individual and personal service that makes us different.
                   </div>
-                 <div className="bannerBtn1">
-                 <button className="btn btn-light btn-rounded" type="button">
-                  Find out more about us
-                  </button>
-                  <button className="btn btn-light btn-rounded" type="button">
-                  Where do we deliver to ?
-                  </button>
-                 </div>
+                  <div className="bannerBtn1">
+                    <button className="btn btn-light btn-rounded" type="button">
+                      Find out more about us
+                    </button>
+                    <button className="btn btn-light btn-rounded" type="button">
+                      Where do we deliver to ?
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

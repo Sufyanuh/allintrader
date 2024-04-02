@@ -57,8 +57,8 @@ const FAQ = () => {
         <p>
           <strong>How much will I need to pay for Delivery?</strong>
           <br />
-          We offer a free local delivery service for orders over £50 inc VAT.
-          For all orders under £50 inc VAT, a £18.00 inc VAT fuel surcharge will
+          We offer a free local delivery service for orders over $50 inc VAT.
+          For all orders under $50 inc VAT, a $18.00 inc VAT fuel surcharge will
           be applied at the checkout.
         </p>
 

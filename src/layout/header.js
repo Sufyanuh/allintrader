@@ -17,7 +17,7 @@ const Header = () => {
                 <Link to="#currency">USD</Link>
                 <div className="dropdown-box">
                   <Link to="#USD">USD</Link>
-                  <Link to="#EUR">EUR</Link>
+                  {/* <Link to="#EUR">x</Link> */}
                 </div>
               </div>
               {/* End of DropDown Menu */}
