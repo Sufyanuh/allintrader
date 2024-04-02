@@ -256,7 +256,7 @@ const Header = () => {
                     <ul className="menu category-menu vertical-menu">
                       {" "}
                       <li>
-                        <a href="/shop">
+                        <a href="/shop/building-materials">
                           <i>
                             {" "}
                             <FaRegBuilding />
@@ -360,7 +360,7 @@ const Header = () => {
                                             </ul> */}
                       </li>
                       <li>
-                        <a href="/shop">
+                        <a href="/shop/timber">
                           <i>
                             {" "}
                             <GiWoodPile />
@@ -369,7 +369,7 @@ const Header = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="/shop">
+                        <a href="/shop/landscaping">
                           <i>
                             <RiLandscapeLine />
                           </i>
@@ -377,7 +377,7 @@ const Header = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="/shop">
+                        <a href="/shop/fixings-adhesives">
                           <i>
                             <VscTools />
                           </i>

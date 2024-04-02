@@ -208,7 +208,7 @@ const Privacy = () => {
         </p>
 
         <ul>
-          <li>
+          {/* <li>
             Mail:
             <a href="mailto:Accounts@all-in-trading.co.uk">
               Accounts@all-in-trading.co.uk
@@ -219,7 +219,7 @@ const Privacy = () => {
             <a href="mailto:Admin@all-in-trading.co.uk">
               Admin@all-in-trading.co.uk
             </a>
-          </li>
+          </li> */}
           <li>
             Mail:
             <a href="mailto:Chris@all-in-trading.co.uk">

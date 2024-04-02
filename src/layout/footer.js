@@ -67,12 +67,12 @@ const Footer = () => {
                     <p className="widget-about-title">
                       Got Question? Mail us 24/7
                     </p>
-                    <a to="#" className="widget-about-call">
+                    {/* <a to="#" className="widget-about-call">
                       Accounts@all-in-trading.co.uk
                     </a>
                     <a to="#" className="widget-about-call">
                       Admin@all-in-trading.co.uk
-                    </a>
+                    </a> */}
                     <a to="#" className="widget-about-call">
                       Chris@all-in-trading.co.uk
                     </a>
@@ -174,7 +174,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="footer-left">
               <p className="copyright">
-                Copyright © 2021 All in Trade. All Rights Reserved.
+                Copyright © 2021 All In Trading Ltd 10622683 All Rights Reserved.
               </p>
             </div>
             <div className="footer-right">

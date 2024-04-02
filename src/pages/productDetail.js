@@ -2,7 +2,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../layout/layout";
+import { useParams } from "react-router-dom";
+import Data from "../json/data.json";
+
 const ProductDetail = () => {
+  const { id } = useParams();
   const [description, setDescription] = useState(true);
   const [specification, setSpecification] = useState(false);
   const [vendor, setVendor] = useState(false);
@@ -32,7 +36,7 @@ const ProductDetail = () => {
     setVendor(false);
     setReviews(true);
   };
-
+  const newData = Data.find((data) => data.id === Number(id));
   return (
     <Layout>
       <main className="main mb-10 pb-1">
@@ -57,8 +61,8 @@ const ProductDetail = () => {
                           <div className="swiper-slide">
                             <figure className="product-image">
                               <img
-                                src="/assets/images/shop/1.jpg"
-                                data-zoom-image="/assets/images/shop/1.jpg"
+                                src={newData?.image}
+                                data-zoom-image={newData?.image}
                                 alt="Electronics Black Wrist Watch"
                                 width={800}
                                 height={900}
@@ -68,8 +72,8 @@ const ProductDetail = () => {
                           <div className="swiper-slide">
                             <figure className="product-image">
                               <img
-                                src="/assets/images/shop/1.jpg"
-                                data-zoom-image="/assets/images/shop/1.jpg"
+                                src={newData?.image}
+                                data-zoom-image={newData?.image}
                                 alt="Electronics Black Wrist Watch"
                                 width={488}
                                 height={549}
@@ -79,8 +83,8 @@ const ProductDetail = () => {
                           <div className="swiper-slide">
                             <figure className="product-image">
                               <img
-                                src="/assets/images/shop/1.jpg"
-                                data-zoom-image="/assets/images/shop/1.jpg"
+                                src={newData?.image}
+                                data-zoom-image={newData?.image}
                                 alt="Electronics Black Wrist Watch"
                                 width={800}
                                 height={900}
@@ -90,8 +94,8 @@ const ProductDetail = () => {
                           <div className="swiper-slide">
                             <figure className="product-image">
                               <img
-                                src="/assets/images/shop/1.jpg"
-                                data-zoom-image="/assets/images/shop/1.jpg"
+                                src={newData?.image}
+                                data-zoom-image={newData?.image}
                                 alt="Electronics Black Wrist Watch"
                                 width={800}
                                 height={900}
@@ -101,8 +105,8 @@ const ProductDetail = () => {
                           <div className="swiper-slide">
                             <figure className="product-image">
                               <img
-                                src="/assets/images/shop/1.jpg"
-                                data-zoom-image="/assets/images/shop/1.jpg"
+                                src={newData?.image}
+                                data-zoom-image={newData?.image}
                                 alt="Electronics Black Wrist Watch"
                                 width={800}
                                 height={900}
@@ -112,8 +116,8 @@ const ProductDetail = () => {
                           <div className="swiper-slide">
                             <figure className="product-image">
                               <img
-                                src="/assets/images/shop/1.jpg"
-                                data-zoom-image="/assets/images/shop/1.jpg"
+                                src={newData?.image}
+                                data-zoom-image={newData?.image}
                                 alt="Electronics Black Wrist Watch"
                                 width={800}
                                 height={900}
@@ -142,7 +146,7 @@ const ProductDetail = () => {
                         <div className="product-thumbs swiper-wrapper row cols-4 gutter-sm">
                           <div className="product-thumb swiper-slide">
                             <img
-                              src="/assets/images/shop/1.jpg"
+                              src={newData?.image}
                               alt="Product Thumb"
                               width={800}
                               height={900}
@@ -150,7 +154,7 @@ const ProductDetail = () => {
                           </div>
                           <div className="product-thumb swiper-slide">
                             <img
-                              src="/assets/images/shop/1.jpg"
+                              src={newData?.image}
                               alt="Product Thumb"
                               width={800}
                               height={900}
@@ -158,7 +162,7 @@ const ProductDetail = () => {
                           </div>
                           <div className="product-thumb swiper-slide">
                             <img
-                              src="/assets/images/shop/1.jpg"
+                              src={newData?.image}
                               alt="Product Thumb"
                               width={800}
                               height={900}
@@ -166,7 +170,7 @@ const ProductDetail = () => {
                           </div>
                           <div className="product-thumb swiper-slide">
                             <img
-                              src="/assets/images/shop/1.jpg"
+                              src={newData?.image}
                               alt="Product Thumb"
                               width={800}
                               height={900}
@@ -174,7 +178,7 @@ const ProductDetail = () => {
                           </div>
                           <div className="product-thumb swiper-slide">
                             <img
-                              src="/assets/images/shop/1.jpg"
+                              src={newData?.image}
                               alt="Product Thumb"
                               width={800}
                               height={900}
@@ -191,9 +195,7 @@ const ProductDetail = () => {
                       className="product-details"
                       data-sticky-options="{'minWidth': 767}"
                     >
-                      <h1 className="product-title">
-                        Electronics Black Wrist Watch
-                      </h1>
+                      <h1 className="product-title">{newData?.title}</h1>
                       <div className="product-bm-wrapper">
                         <figure className="brand">
                           <img
@@ -207,7 +209,7 @@ const ProductDetail = () => {
                           <div className="product-categories">
                             Category:
                             <span className="product-category">
-                              <Link to="#">Electronics</Link>
+                              <Link to="#">{newData?.type}</Link>
                             </span>
                           </div>
                           <div className="product-sku">
@@ -217,7 +219,7 @@ const ProductDetail = () => {
                       </div>
                       <hr className="product-divider" />
                       <div className="product-price">
-                        <ins className="new-price">$40.00</ins>
+                        <ins className="new-price">{newData?.price}</ins>
                       </div>
                       <div className="ratings-container">
                         <div className="ratings-full">
@@ -233,15 +235,7 @@ const ProductDetail = () => {
                       </div>
                       <div className="product-short-desc">
                         <ul className="list-type-check list-style-none">
-                          <li>
-                            Ultrices eros in cursus turpis massa cursus mattis.
-                          </li>
-                          <li>
-                            Volutpat ac tincidunt vitae semper quis lectus.
-                          </li>
-                          <li>
-                            Aliquam id diam maecenas ultricies mi eget mauris.
-                          </li>
+                          <li>{newData?.description}</li>
                         </ul>
                       </div>
                       <hr className="product-divider" />
@@ -363,7 +357,7 @@ const ProductDetail = () => {
                   </div>
                 </div>
 
-                <div className="tab tab-nav-boxed tab-nav-underline product-tabs">
+                {/* <div className="tab tab-nav-boxed tab-nav-underline product-tabs">
                   <ul className="nav nav-tabs">
                     <li className="nav-item">
                       <Link
@@ -1410,7 +1404,7 @@ const ProductDetail = () => {
                       </div>
                     )}
                   </div>
-                </div>
+                </div> */}
               </div>
               {/* End of Main Content */}
               <aside className="sidebar product-sidebar sidebar-fixed right-sidebar sticky-sidebar-wrapper">
@@ -1482,7 +1476,7 @@ const ProductDetail = () => {
                       </div>
                     </div>
                     {/* End of Widget Banner */}
-                    <div className="widget widget-products">
+                    {/* <div className="widget widget-products">
                       <div className="title-link-wrapper mb-2">
                         <h4 className="title title-link font-weight-bold">
                           More Products
@@ -1591,7 +1585,7 @@ const ProductDetail = () => {
                                 <figure className="product-media">
                                   <Link to="#">
                                     <img
-                                      src="/assets/images/shop/1.jpg"
+                                      src={newData?.image}
                                       alt="Product"
                                       width={100}
                                       height={113}
@@ -1674,7 +1668,7 @@ const ProductDetail = () => {
                           <button className="swiper-button-prev" />
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </aside>
