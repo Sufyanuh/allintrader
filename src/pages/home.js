@@ -378,7 +378,7 @@ const Home = () => {
             </div>
           </div>
           <div className="post-wrapper appear-animate mb-4">
-            <div className="title-link-wrapper pb-1 mb-4">
+            {/* <div className="title-link-wrapper pb-1 mb-4">
               <h2 className="title ls-normal mb-0">From Our Blog</h2>
               <a
                 href="blog-listing.html"
@@ -386,7 +386,7 @@ const Home = () => {
               >
                 View All Articles
               </a>
-            </div>
+            </div> */}
             <h2
               className="ls-normal mb-0"
               style={{ textAlign: "center", padding: "20px" }}

@@ -13,12 +13,12 @@ const Header = () => {
         <div className="header-top">
           <div className="container">
             <div className="header-right">
-              <div className="dropdown">
-                <Link to="#currency">USD</Link>
-                <div className="dropdown-box">
+              <div>
+                <Link to="#currency">GBP</Link>
+                {/* <div className="dropdown-box">
                   <Link to="#USD">USD</Link>
-                  <Link to="#EUR">EUR</Link>
-                </div>
+                  <Link to="#EUR">x</Link>
+                </div> */}
               </div>
               {/* End of DropDown Menu */}
               <div className="dropdown">

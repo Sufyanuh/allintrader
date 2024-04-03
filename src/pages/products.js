@@ -13,17 +13,14 @@ const Products = () => {
         <div className="page-content mb-10">
           <div className="container-fluid">
             {/* Start of Shop Content */}
-            <div className="shop-content row gutter-lg">
+            <div className="shop-content ">
               {/* Start of Sidebar, Shop Sidebar */}
-              <aside className="sidebar shop-sidebar left-sidebar sticky-sidebar-wrapper sidebar-fixed">
-                {/* Start of Sidebar Overlay */}
+              {/* <aside className="sidebar shop-sidebar left-sidebar sticky-sidebar-wrapper sidebar-fixed">
                 <div className="sidebar-overlay" />
                 <Link className="sidebar-close" to="#">
                   <i className="close-icon" />
                 </Link>
-                {/* Start of Sidebar Content */}
                 <div className="sidebar-content scrollable">
-                  {/* Start of Sticky Sidebar */}
                   <div className="sticky-sidebar">
                     <div className="filter-actions">
                       <label>Filter :</label>
@@ -34,7 +31,6 @@ const Products = () => {
                         Clean All
                       </Link>
                     </div>
-                    {/* Start of Collapsible widget */}
                     <div className="widget widget-collapsible">
                       <h3 className="widget-title">
                         <label>All Categories</label>
@@ -78,8 +74,7 @@ const Products = () => {
                         </li>
                       </ul>
                     </div>
-                    {/* End of Collapsible Widget */}
-                    {/* Start of Collapsible Widget */}
+                   
                     <div className="widget widget-collapsible">
                       <h3 className="widget-title">
                         <label>Price</label>
@@ -122,8 +117,7 @@ const Products = () => {
                         </form>
                       </div>
                     </div>
-                    {/* End of Collapsible Widget */}
-                    {/* Start of Collapsible Widget */}
+                   
                     <div className="widget widget-collapsible">
                       <h3 className="widget-title">
                         <label>Size</label>
@@ -143,8 +137,7 @@ const Products = () => {
                         </li>
                       </ul>
                     </div>
-                    {/* End of Collapsible Widget */}
-                    {/* Start of Collapsible Widget */}
+                   
                     <div className="widget widget-collapsible">
                       <h3 className="widget-title">
                         <label>Brand</label>
@@ -173,8 +166,7 @@ const Products = () => {
                         </li>
                       </ul>
                     </div>
-                    {/* End of Collapsible Widget */}
-                    {/* Start of Collapsible Widget */}
+                   
                     <div className="widget widget-collapsible">
                       <h3 className="widget-title">
                         <label>Color</label>
@@ -203,12 +195,11 @@ const Products = () => {
                         </li>
                       </ul>
                     </div>
-                    {/* End of Collapsible Widget */}
+                   
                   </div>
-                  {/* End of Sidebar Content */}
+               
                 </div>
-                {/* End of Sidebar Content */}
-              </aside>
+              </aside> */}
               {/* End of Shop Sidebar */}
               {/* Start of Shop Main Content */}
               <div className="main-content">
