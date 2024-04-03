@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaRegBuilding } from "react-icons/fa";
-import { GiWoodPile } from "react-icons/gi";
+import { GiTowTruck, GiWoodPile } from "react-icons/gi";
 import { RiLandscapeLine } from "react-icons/ri";
 import { VscTools } from "react-icons/vsc";
 import { GoSkip } from "react-icons/go";
+import { PiPaintBrushHousehold, PiToolboxBold } from "react-icons/pi";
 
 const Header = () => {
   return (
@@ -382,6 +383,30 @@ const Header = () => {
                             <VscTools />
                           </i>
                           FIXING & ADHESIVES
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/shop/decorating">
+                          <i>
+                            <PiPaintBrushHousehold />
+                          </i>
+                          DECORATION
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/shop/tools-and-safety-wear">
+                          <i>
+                            <PiToolboxBold />
+                          </i>
+                          TOOL & SAFETY WEAR
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/shop/hire-services">
+                          <i>
+                            <GiTowTruck size={15}/>
+                          </i>
+                          HIRE SERVICES
                         </a>
                       </li>
                     </ul>
